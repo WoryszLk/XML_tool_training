@@ -5,7 +5,7 @@ using System.Xml;
 
 class Program
 {
-    public static string path = "C:\\Users\\worys\\OneDrive\\Pulpit\\NaukaH\\c#_vscode\\ConsoleApp1\\test.xml";
+    public static string path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "test.xml");
 
     public static XmlDocument Read_Xml(string path)
     {
