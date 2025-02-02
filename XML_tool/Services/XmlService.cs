@@ -120,9 +120,8 @@ namespace XML_tool.Services
             return doc;
         }
 
-        public static XmlDocument Copy_Xml(XmlDocument doc, string name)
+        public static XmlDocument Copy_Xml(XmlDocument doc, string name, string path)
         {
-            string path = "C:\\Users\\worys\\OneDrive\\Pulpit\\NaukaH\\c#_vscode\\ConsoleApp1\\" + name + ".xml";
             XmlDocument xmlDoc = new XmlDocument();
 
             XmlNode importedRoot = xmlDoc.ImportNode(doc.DocumentElement, true);
