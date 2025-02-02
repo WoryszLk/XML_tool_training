@@ -31,10 +31,11 @@
             <Rectangle Height="10000"/>
         </ScrollViewer>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Width="150" Height="50" Content="Add XML object" Margin="0,0,10,0"/>
-            <Button Width="150" Height="50" Content="Remove XML object" Margin="10,0,0,0"/>
+        <StackPanel x:Name="ButtonPanel" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Width="150" Height="50" Content="Add XML object" Click="OpenAddXmlWindow"/>
+            <Button Width="150" Height="50" Content="Remove XML object" Click="OpenRemoveXmlWindow"/>
         </StackPanel>
 
+        <ContentControl x:Name="MainContent" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Window>
